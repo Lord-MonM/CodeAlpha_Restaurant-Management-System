@@ -1,0 +1,28 @@
+{
+  "name": "restaurant-management-system",
+  "version": "1.0.0",
+  "description": "A restaurant management system for managing orders, inventory, reservations, and menu items.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lord-MonM/Restaurant-Management-System.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lord-MonM/Restaurant-Management-System/issues"
+  },
+  "homepage": "https://github.com/Lord-MonM/Restaurant-Management-System#readme",
+  "dependencies": {
+    "body": "^5.1.0",
+    "cookie-session": "^2.1.0",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "nodemon": "^3.1.10",
+    "parser": "^0.1.4"
+  }
+}
