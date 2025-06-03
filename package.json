@@ -4,7 +4,9 @@
   "description": "A restaurant management system for managing orders, inventory, reservations, and menu items.",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "test": "echo\"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -18,10 +20,16 @@
   },
   "homepage": "https://github.com/Lord-MonM/Restaurant-Management-System#readme",
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "body": "^5.1.0",
     "cookie-session": "^2.1.0",
+    "dotenv": "^16.5.0",
     "express": "^5.1.0",
+    "express-async-handler": "^1.2.0",
     "express-validator": "^7.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "mongoose": "^8.15.0",
     "nodemon": "^3.1.10",
     "parser": "^0.1.4"
   }
