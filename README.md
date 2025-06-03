@@ -96,7 +96,7 @@ http://localhost:5001/api/...
 | Orders       | `/api/orders`                                       |
 | Inventory    | `/api/inventory`, `/api/reports/inventory-usage`    |
 | Menu         | `/api/menu`                                         |
-| Tables       | `/api/tables`, `/api/reports/tables`                |
+| Tables       | `/api/tables`, `/api/reports/tables-stats`                |
 | Reservations | `/api/reservations`                                 |
 | Reports      | `/api/reports/sales`, `/api/reports/popular-dishes` |
 
