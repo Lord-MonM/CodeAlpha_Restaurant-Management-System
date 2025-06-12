@@ -328,7 +328,7 @@ const deleteOrder = asyncHandler( async (req, res) => {
   );
 
   await Order.deleteOne({ _id: req.params.id });
-  res.status(200).json(order, { message: "Order deleted and table released." });
+  res.status(200).json(order, { message: "Order deleted" });
 });
 
 module.exports = {

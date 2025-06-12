@@ -9,16 +9,22 @@ const {
   deleteMenuItem,
 } = require("../controllers/menuController.js");
 const validateToken = require("../middleware/validateTokenHandler.js");
+const authorizeRoles = require("../middleware/roleMiddleware.js");
 
 router.use(validateToken);
-router.route("/").get(getMenu).post(createMenuItem);
+router
+  .route("/")
+  .get(authorizeRoles("admin", "manager", "user"), getMenu)
+  .post(authorizeRoles("admin", "manager"), createMenuItem);
 
-router.route("/filters").get(getAllMenuItems);
+router
+  .route("/filters")
+  .get(authorizeRoles("admin", "manager", "user"), getAllMenuItems);
 
 router
   .route("/:id")
-  .put(updateMenuItem)
-  .get(getMenuItem)
-  .delete(deleteMenuItem);
+  .put(authorizeRoles("admin", "manager"), updateMenuItem)
+  .get(authorizeRoles("admin", "manager", "user"), getMenuItem)
+  .delete(authorizeRoles("admin", "manager"), deleteMenuItem);
 
 module.exports = router;

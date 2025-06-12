@@ -18,7 +18,6 @@ app.use("/api/reports",require("./routes/reportRoutes.js"));
 app.use("/api/menu",require("./routes/menuRoutes.js"));
 app.use("/api/inventory",require("./routes/inventoryRoutes.js"));
 app.use("/api/tables", require("./routes/tableRoutes.js"));
-app.use("/api/users",require("./routes/userRoutes.js"));
 app.use("/api/auth",require("./routes/authRoutes.js"));
 app.use("/api/reservations", require("./routes/reservationRoutes.js"));
 app.use(errorHandler)
